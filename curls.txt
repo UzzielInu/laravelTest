@@ -1,0 +1,26 @@
+curl --request GET \
+  --url http://localhost:8080/example-app/public/api/autos/1
+
+
+
+curl --request POST \
+  --url http://localhost:8080/example-app/public/api/autos \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"nombre":"Spark",
+	"precio":"25000"
+}'
+
+
+
+curl --request PUT \
+  --url http://localhost:8080/example-app/public/api/autos/1 \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"nombre":"CHEYENNE 2021",
+	"precio":"80888"
+}'
+
+
+curl --request DELETE \
+  --url http://localhost:8080/example-app/public/api/autos/1
